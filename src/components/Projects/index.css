@@ -1,0 +1,46 @@
+/* General styles for the projects section */
+.projects {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .project {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .project p {
+    padding: 0 10px 10px;
+  }
+  
+  .project:hover {
+    transform: translateY(-10px);
+  }
+  

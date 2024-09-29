@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, figure, blockquote, div {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Ensure the app takes full height of the viewport */
+html, body {
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Wrapper to ensure a consistent max width and center alignment */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Generic section styling */
+section {
+  padding: 60px 20px;
+}
+
+/* Ensure all images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Global link styles */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  background-color: #ff6347;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #ff4500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header specific styles */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+header .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+header .nav-links li {
+  margin-right: 20px;
+}
+
+header .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Hero specific styles */
+.hero {
+  /* background: url('/path-to-your-image/hero-image.jpg') center center/cover no-repeat;*/
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+.hero-content .cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff6347;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
 }

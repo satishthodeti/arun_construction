@@ -1,0 +1,138 @@
+:root {
+  --primary-color: #1a73e8; /* Blue */
+  --secondary-color: #fbbc05; /* Yellow */
+  --background-color: #f1f3f4; /* Light grey */
+  --text-color: #202124; /* Dark grey */
+  --accent-color: #34a853; /* Green */
+  --light-color: #ffffff; /* White */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: var(--light-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.about h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 4px;
+  background: var(--secondary-color);
+  border-radius: 2px;
+  animation: underline 1s ease-in-out;
+}
+
+.about p,
+.about h3,
+.about ul {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.about h3 {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  margin-top: 30px;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.about ul li {
+  padding: 10px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-left: 5px solid var(--primary-color);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.about ul li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.about ul li strong {
+  color: var(--primary-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 10px;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p,
+  .about h3,
+  .about ul {
+    font-size: 1rem;
+  }
+}

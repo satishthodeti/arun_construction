@@ -1,0 +1,5 @@
+/* Header.css */
+.header {
+  background-color: #343a40; /* Dark background color */
+  padding: 10px 0; /* Top and bottom padding of 10px, no left and right padding */
+}
